@@ -1,0 +1,8 @@
+version: "3.3"
+services:
+  vcsim:
+     image: "vcsim:latest"
+     build: ./vcsim
+     command: ["-l", "0.0.0.0:8989"]
+     ports:
+       - "127.0.0.1:443:8989"
